@@ -1,4 +1,4 @@
-# An Empirical Analysis of Turkey's Sovereign CDS Spreads
+# Empirical Analysis of Turkey's Sovereign CDS Spreads
 
 Replication code and data for the undergraduate thesis **"Pressure from Outside: An Empirical Investigation of the Effects of U.S. Interest Rates, the Dollar Index, and Domestic Vulnerabilities on Turkey's Country Risk Premium"** (Ali Altıntaş).
 
