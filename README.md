@@ -107,4 +107,4 @@ R² = 0.1628 · Adj. R² = 0.1577 · F = 22.66 · N = 834
 
 ## Data
 
-See [`data/data_dictionary.md`](data/data_dictionary.md). The only correction applied to the raw series is documented in the **Correction Note** sheet of the Excel file (one invalid negative CDS value at 2021-03-26 replaced with the nearest valid daily observation, 451.335).
+See data/data_dictionary.md. The only correction applied to the raw series is documented in the **Correction Note** sheet of the Excel file (one invalid negative CDS value at 2021-03-26 replaced with the nearest valid daily observation, 451.335).
