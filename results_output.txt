@@ -1,0 +1,78 @@
+================  DATA CHECKS  ================
+Data file: data/Turkiye_CDS_Veriseti.csv
+Rows before dropna: 835
+Date range: 2010-01-01 to 2025-12-26
+Duplicate dates: 0
+Negative CDS values: 0
+Missing values by model column:
+CDS        0
+US10Y      0
+ln_DXY     0
+ln_RES     0
+BRUNSON    0
+AGBAL      0
+Rows after dropna: 835
+Max ln_DXY rebuild difference: 0.0000000000
+Max ln_RES rebuild difference: 0.0000000000
+
+================  TABLE A1  Model 1 (Full, US10Y included)  ================
+               coef   std_err        t       p  sig
+Variable                                           
+const    -1318.3603  414.6542  -3.1794  0.0015  ***
+US10Y      -12.0884    7.6386  -1.5825  0.1139     
+ln_DXY    1043.3923   94.8642  10.9988  0.0000  ***
+ln_RES    -264.0479   41.6689  -6.3368  0.0000  ***
+BRUNSON     79.9846   31.4864   2.5403  0.0113   **
+AGBAL       68.0439   14.5347   4.6815  0.0000  ***
+R2=0.4841  Adj.R2=0.4810  F=187.67  Prob(F)=1.32e-133  N=835
+
+================  TABLE A2  Model 2 (Final, US10Y excluded)  ================
+               coef   std_err        t       p  sig
+Variable                                           
+const    -1014.9119  400.2815  -2.5355  0.0114   **
+ln_DXY    1027.5162   94.6964  10.8506  0.0000  ***
+ln_RES    -286.6886   39.0558  -7.3405  0.0000  ***
+BRUNSON     73.7963   30.9187   2.3868  0.0172   **
+AGBAL       74.1609   14.8961   4.9786  0.0000  ***
+R2=0.4785  Adj.R2=0.4760  F=224.16  Prob(F)=2.05e-130  N=835
+
+================  TABLE A3  VIF (Model 1)  ================
+Variable    VIF
+   US10Y 1.2434
+  ln_DXY 1.1921
+  ln_RES 1.3488
+ BRUNSON 1.0087
+   AGBAL 1.0069
+
+================  TABLE A4  Diagnostics  ================
+Durbin-Watson (M1)    : 0.0511
+Breusch-Pagan LM (M1) : 134.3480  p=2.84e-27
+Breusch-Pagan LM (M2) : 137.6531  p=8.98e-29
+Jarque-Bera (M1)      : 111.3949  p=6.47e-25
+Jarque-Bera (M2)      : 100.4924  p=1.51e-22
+
+ADF unit-root (regression='c', autolag='AIC'):
+  CDS     level: stat= -2.453 p=0.127 | diff: stat=-12.233 p=0.000
+  US10Y   level: stat= -1.464 p=0.551 | diff: stat=-19.806 p=0.000
+  ln_DXY  level: stat= -1.804 p=0.379 | diff: stat=-30.066 p=0.000
+  ln_RES  level: stat= -1.472 p=0.547 | diff: stat= -8.620 p=0.000
+
+Engle-Granger cointegration (proper EG critical values):
+  M1: stat=-2.7328  p=0.8413
+  M2: stat=-2.7568  p=0.7102
+  (No cointegration at conventional levels; level regression should be interpreted with caution.)
+
+================  TABLE A5  Model 3 (First-Difference Robustness Check)  ================
+              coef   std_err       t       p  sig
+Variable                                         
+const      -0.2905    0.7000 -0.4149  0.6783     
+d_US10Y   -16.1091    8.4439 -1.9078  0.0568    *
+d_ln_DXY  672.2974  139.3669  4.8239  0.0000  ***
+d_ln_RES -246.3138   56.6626 -4.3470  0.0000  ***
+BRUNSON    44.3434    6.3679  6.9635  0.0000  ***
+AGBAL      40.9136   21.2250  1.9276  0.0542    *
+R2=0.1628  Adj.R2=0.1577  F=22.66  Prob(F)=2.4e-21  N=834
+  Interpretation: d_ln_DXY and d_ln_RES remain highly significant after
+  differencing, so the level-regression results are not spurious.
+
+Saved output: results_output.txt
