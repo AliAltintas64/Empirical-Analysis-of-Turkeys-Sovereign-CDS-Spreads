@@ -4,7 +4,7 @@
 #   1) Works from repo root, code/ folder, or a flat folder containing the CSV.
 #   2) Keeps variable names in HAC output tables.
 #   3) Adds basic data integrity checks before estimation.
-#   4) Saves the output to results_output_checked.txt.
+#   4) Saves the output to results_output_checked.txt. 
 # ══════════════════════════════════════════════════════════════
 
 from __future__ import annotations
