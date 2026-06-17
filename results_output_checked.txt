@@ -1,5 +1,5 @@
 ================  DATA CHECKS  ================
-Data file: data/Turkiye_CDS_Veriseti.csv
+Data file: C:\Users\msı\Desktop\github\cds-thesis-replication\data\Turkiye_CDS_Veriseti.csv
 Rows before dropna: 835
 Date range: 2010-01-01 to 2025-12-26
 Duplicate dates: 0
@@ -62,6 +62,8 @@ Engle-Granger cointegration (proper EG critical values):
   M2: stat=-2.7568  p=0.7102
   (No cointegration at conventional levels; level regression should be interpreted with caution.)
 
+================  TABLE A5  Model 3 (First-Difference Robustness)  ================
+
 ================  TABLE A5  Model 3 (First-Difference Robustness Check)  ================
               coef   std_err       t       p  sig
 Variable                                         
@@ -75,4 +77,4 @@ R2=0.1628  Adj.R2=0.1577  F=22.66  Prob(F)=2.4e-21  N=834
   Interpretation: d_ln_DXY and d_ln_RES remain highly significant after
   differencing, so the level-regression results are not spurious.
 
-Saved output: results_output.txt
+Saved output: C:\Users\msı\Desktop\github\results_output_checked.txt
