@@ -19,4 +19,4 @@
 
 - **2021-03-26**: the source row contained an invalid negative CDS value (−2.17); it was replaced with **451.335**, the nearest valid prior daily observation (25.03.2021 High–Low average from the daily CDS file).
 
-No other corrections were made. The dataset has no missing values, no duplicate dates, and no gaps (all weekly spacings = 7 days).
+No other corrections were made. The dataset has no missing values, no duplicate dates, and no gaps (all weekly spacings = 7 days). 
