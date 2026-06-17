@@ -1,6 +1,6 @@
 # Empirical Analysis of Turkey's Sovereign CDS Spreads
 
-Replication code and data for the undergraduate thesis **"Pressure from Outside: An Empirical Investigation of the Effects of U.S. Interest Rates, the Dollar Index, and Domestic Vulnerabilities on Turkey's Country Risk Premium"** (Ali Altıntaş).
+Replication code and data for the undergraduate thesis **"Pressure from Outside: An Empirical Investigation of the Effects of U.S. Interest Rates, the Dollar Index, and Domestic Vulnerabilities on Turkey's Country Risk Premium"** (Ali Altıntaş). 
 
 The study estimates the external and domestic determinants of Turkey's 5-year sovereign CDS spread using weekly data from January 2010 to December 2025 (N = 835), via OLS with Newey-West HAC standard errors.
 
