@@ -22,7 +22,7 @@ The study estimates the external and domestic determinants of Turkey's 5-year so
 ## How to run
 
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy scipy statsmodels sys pathlib matplotlib
 python code/cds_analysis.py
 ```
 
