@@ -22,7 +22,7 @@ import statsmodels.api as sm
 
 DATA_FILE = "Turkiye_CDS_Veriseti.csv"
 REQUIRED_COLS = ["Date", "CDS", "US10Y", "DXY", "RESERVES", "ln_DXY", "ln_RES", "BRUNSON", "AGBAL"]
-MODEL_COLS = ["CDS", "US10Y", "ln_DXY", "ln_RES", "BRUNSON", "AGBAL"]
+MODEL_COLS = ["CDS", "US10Y", "ln_DXY", "ln_RES", "BRUNSON", "AGBAL"] 
 
 
 def find_data_file() -> Path:
